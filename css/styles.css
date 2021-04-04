@@ -6,6 +6,7 @@
   --black-color: #000000;
   --background-dark: #2f303a;
   --background-grey: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -269,7 +270,7 @@ p {
 }
 
 .member-description {
-  padding: 30px;
+  padding: 30px 30px 16px 30px;
 }
 
 .team-list {
@@ -277,7 +278,7 @@ p {
   margin: -15px;
 }
 
-.team-list li {
+.team-list .item {
   max-width: 270px;
   margin: 15px;
   background-color: var(--white-color);
@@ -299,6 +300,69 @@ p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.member-social-links {
+  width: 206px;
+  margin: 0 32px 30px 32px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.member-social-links .icon {
+  fill: var(--icon-color);
+}
+
+.member-social-link:hover .icon,
+.member-social-link:focus .icon {
+  fill: var(--white-color);
+}
+
+.member-social-link:hover,
+.member-social-link:focus {
+  background-color: var(--accent);
+}
+
+/* Regular clients */
+
+.regular-clients {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.regular-clients .icon {
+  fill: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent);
+}
+
+.client-link:hover .icon,
+.client-link:focus .icon {
+  fill: var(--accent);
 }
 
 /* Footer */

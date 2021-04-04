@@ -216,7 +216,7 @@ p {
   margin: -15px;
 }
 
-.feature li {
+.feature .item {
   width: 270px;
   margin: 15px;
 }
@@ -227,6 +227,16 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--heading-color);
+}
+
+.feature-icon {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-grey);
+}
+
+.feature-icon svg {
+  margin: 25px 100px;
 }
 
 /* Our work */

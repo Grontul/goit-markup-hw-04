@@ -133,6 +133,11 @@ p {
   color: var(--text-color);
 }
 
+.header-contact svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .header-contact:hover,
@@ -140,6 +145,11 @@ p {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent);
+}
+
+.header-contact:hover svg,
+.header-contact:focus svg {
+  fill: var(--accent);
 }
 
 .current-page {
@@ -152,7 +162,15 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-dark);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/main-bg.jpg);
+  background-size: cover;
+  background-position: absolute;
 }
 
 .hero-title {

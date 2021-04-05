@@ -92,6 +92,14 @@ p {
   padding-bottom: 94px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--heading-color);
+}
+
 /* header */
 
 .header {
@@ -169,7 +177,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/main-bg.jpg);
+    url(../images/main-bg.jpg);
   background-size: cover;
   background-position: absolute;
 }
@@ -255,14 +263,6 @@ p {
   margin: 15px;
 }
 
-.section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--heading-color);
-}
-
 /* Our team */
 
 .our-team {
@@ -310,7 +310,7 @@ p {
   justify-content: space-between;
 }
 
-.member-social-link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,13 +323,13 @@ p {
   fill: var(--icon-color);
 }
 
-.member-social-link:hover .icon,
-.member-social-link:focus .icon {
+.member-social-links .social-link:hover .icon,
+.member-social-links .social-link:focus .icon {
   fill: var(--white-color);
 }
 
-.member-social-link:hover,
-.member-social-link:focus {
+.member-social-links .social-link:hover,
+.member-social-links .social-link:focus {
   background-color: var(--accent);
 }
 
@@ -389,6 +389,50 @@ p {
   margin-top: 9px;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .container {
+  display: flex;
+}
+
+.member-social-links-thumb {
+  margin-top: 12px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social-links {
+  width: 206px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-links .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-links .icon {
+  fill: var(--white-color);
+}
+
+.footer-social-links .social-link:hover .icon,
+.footer-social-links .social-link:focus .icon {
+  fill: var(--white-color);
+}
+
+.footer-social-links .social-link:hover,
+.footer-social-links .social-link:focus {
+  background-color: var(--accent);
 }
 
 /* Work filter */

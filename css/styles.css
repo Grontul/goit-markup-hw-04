@@ -131,6 +131,11 @@ p {
 .logo {
   margin-right: 93px;
 }
+
+.nav-link {
+  color: var(--heading-color);
+}
+
 .nav-links .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -145,14 +150,17 @@ p {
 
 .nav-link,
 .header-contact {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
 
+.header-contact {
   color: var(--text-color);
 }
 
@@ -192,8 +200,8 @@ p {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/main-bg.jpg);
+  max-width: 1600px;
   background-size: cover;
-  background-position: absolute;
 }
 
 .hero-title {
@@ -258,8 +266,10 @@ p {
   background-color: var(--background-grey);
 }
 
-.feature-icon svg {
-  margin: 25px 100px;
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Our work */
@@ -284,7 +294,7 @@ p {
 }
 
 .member-description {
-  padding: 30px 30px 16px 30px;
+  padding: 30px;
 }
 
 .team-list {
@@ -311,14 +321,13 @@ p {
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
 .member-social-links {
-  width: 206px;
-  margin: 0 32px 30px 32px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -353,6 +362,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .client-link {
@@ -407,12 +417,11 @@ p {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .member-social-links-thumb {
-  margin-top: 12px;
   margin-left: 70px;
-  margin-bottom: 40px;
 }
 
 .footer-title {
@@ -425,10 +434,13 @@ p {
 }
 
 .footer-social-links {
-  width: 206px;
+  margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+}
+
+.footer-social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-links .social-link {
@@ -494,6 +506,12 @@ p {
   margin: 15px;
   flex-basis: calc(100% / 3 - 30px);
   box-sizing: border-box;
+}
+
+.work-list .item:hover,
+.work-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-list-content {
